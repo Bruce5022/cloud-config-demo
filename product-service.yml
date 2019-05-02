@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: product-service
+  zipkin:
+    base-url: http://116.196.92.43:9411
+  sleuth:
+    sampler:
+      probability: 1
